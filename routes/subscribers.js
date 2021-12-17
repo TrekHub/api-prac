@@ -1,6 +1,9 @@
 const express = require('express')
 const router = express.Router()
 
+const Subscriber = require('../models/subscriber')
+
+
 
 //Creating Routes For  Subscribers
 
@@ -8,11 +11,13 @@ const router = express.Router()
 // 1. Getting All
 
 router.get('/', (req, res) => {
+    res.send('Hello World')
 
 });
 
 // 2. Creating One
-router.post('/:id', (req, res) => {
+router.post('/', (req, res) => {
+    
 
 });
 
